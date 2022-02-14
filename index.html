@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="assets/index.css">
-
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>My site</title>
 </head>
 
@@ -18,7 +18,7 @@
         <a href="#about" class="nav_about">About</a>
         <a href="#projects" class="nav_projects">Projects</a>
         <a href="#achievements" class="nav_achievements">Achievements</a>
-        <a href="/cv.html" class="nav_cv">CV</a>
+        <a href="/cv.pdf" class="nav_cv">CV</a>
         <a href="/blog.html" class="nav_blog">Blog</a>
     </nav>
     <p class='switcher unselectable' id="lang_switcher_btn">eng</p>
@@ -63,21 +63,28 @@
         <img class="iam" src="assets/img/i.png" alt="igor">
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <h2 class="about_title">About</h2>
-        <div class="about_div">
+        <div class="about_div school">
             <p class="about_school">
-                I want to enroll in Yandex Lyceum ++ to learn Django
+            </p>
+        </div>
+        <div class="about_div learn">
+            <p class="about_learn">
+            </p>
+        </div>
+        <div class="about_div yandex">
+            <p class="about_yandex">
             </p>
         </div>
         <div class="toggle_about">
-            <div id="toggle_item_first" class="toggle_about_item active"></div>
-            <div id="toggle_item_second" class="toggle_about_item"></div>
-            <div id="toggle_item_third" class="toggle_about_item"></div>
+            <div id="toggle_item_first" class="toggle_about_item active school"></div>
+            <div id="toggle_item_second" class="toggle_about_item school"></div>
+            <div id="toggle_item_third" class="toggle_about_item school"></div>
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <hgroup>
             <h2 class="projects_title"></h2>
             <h3 class="projects_description">my latest projects coincide with the contestant Grigory Muravenko @deformater, since we did most of
@@ -92,7 +99,7 @@
                 <h4 class="projects_randomall_title">RandomAll</h4>
                 <p class="projects_randomall_description">a simple service for obtaining various random values</p>
             </div>
-            <div class="balentinbot">
+            <div class="valentin">
                 <h4 class="projects_valentinbot_title">ValentinBot</h4>
                 <p class="projects_valentinbot_description">telegram bot for exchanging valentine's cards</p>
             </div>
@@ -103,7 +110,7 @@
         </div>
     </section>
 
-    <section class="achievements">
+    <section id="achievements" class="achievements">
         <hgroup>
             <h2 class="achievements_title">Achievements</h2>
             <h3 class="achievements_description">Some of my results of participation in competitions</h3>
@@ -126,16 +133,41 @@
 
 <footer>
     <h2 class="contact_title"></h2>
-    <h3 class="contact_short_description">You can find me on any of these social networks <a>or write to me on my email</a></h3>
+    <h3 class="contact_short_description">You can find me on any of these social networks</h3>
+    <a href="mailito:igor.kuzmenkov.05@mail.ru" class="mail_link"></a>
     <div class="social">
-
+        <!-- TODO: change color in night theme -->
+        <div class="social_item mail">
+            <a href="mailito:igor.kuzmenkov.05@mail.ru">
+                <img src="assets/img/mail.svg">
+            </a>
+        </div>
+        <div class="social_item github">
+            <a href="https://github.com/IgorDuino">
+                <img src="assets/img/github.svg">
+            </a>
+        </div>
+        <div class="social_item telegram">
+            <a href="https://t.me/igorduino">
+                <img src="assets/img/telegram.svg">
+            </a>
+        </div>
+        <div class="social_item vk">
+            <a href="https://vk.com/igorduino">
+                <img src="assets/img/vk.svg">
+            </a>
+        </div>
+        <div class="social_item instagram">
+            <a href="https://www.instagram.com/igorduino/">
+                <img src="assets/img/instagram.svg">
+            </a>
+        </div>
     </div>
     <h3 class="contact_thanks">Thank you to Yandex that I finally started making a website for myself</h3>
 </footer>
 
-</body>
-
 <script src="assets/js/theme.js"></script>
 <script src="assets/js/lang.js"></script>
 
+</body>
 </html>

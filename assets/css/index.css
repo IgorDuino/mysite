@@ -1,0 +1,203 @@
+section {
+    margin-top: 150px;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Who Am I */
+
+
+.whoami {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.whoami h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 72px;
+    color: #333333;
+    font-weight: bold;
+}
+
+body.dark-theme .whoami h2 {
+    color: #F2F2F2;
+}
+
+.whoami p {
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #6B7280;
+    font-weight: normal;
+}
+
+body.dark-theme .whoami p {
+    color: #E0E0E0;
+}
+
+.whoami hr {
+    width: 650px;
+    height: 0;
+    color: #333333;
+    border: none;
+    border-top: 2px solid;
+    margin-top: 40px;
+}
+
+body.dark-theme .whoami hr {
+    color: #F2F2F2;
+}
+
+.whoami .iam {
+    border-radius: 10px;
+}
+
+
+/* About */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about h2 {
+    color: #333333;
+    font-size: 48px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about_div {
+    background-size: cover;
+
+    margin-top: 50px;
+}
+
+.about_div.school {
+    background: url('/assets/img/school.png');
+}
+
+.about_div.learn {
+    display: none;
+    background: url('/assets/img/electronic.png');
+}
+
+.about_div.yandex {
+    display: none;
+    background: url('/assets/img/lyceum.png');
+}
+
+.about p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #000;
+    background: #fff;
+    mix-blend-mode: lighten;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.toggle_about {
+    height: 35px;
+    width: 414px;
+
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.toggle_about_item {
+    width: 83px;
+    height: 10px;
+
+    border-radius: 100px;
+    transition: .2s;
+}
+
+.toggle_about_item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.toggle_about_item.school {
+    background-color: #CFC8BE;
+}
+
+.toggle_about_item.school.active {
+    background-color: #30430C;
+}
+
+.toggle_about_item.learn {
+    background-color: #68B7E0;
+}
+
+.toggle_about_item.learn.active {
+    background-color: #2C509C;
+}
+
+.toggle_about_item.yandex {
+    background-color: #131313;
+}
+
+.toggle_about_item.yandex.active {
+    background-color: #FA9715;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects h3 {
+    color: #6B7280;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.projects hgroup h2 {
+    color: #333333;
+    font-size: 48px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.projects.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "isabsent isabsent"
+    "randomall valentin"
+    "shrty valentin";
+}
+
+.projects.content.valentin {
+    grid-area: valentin;
+}
+
+.projects.content.shrty {
+    grid-area: shrty;
+}
+
+.projects.content.randomall {
+    grid-area: randomall;
+}
+
+.projects.content.isabsent {
+    grid-area: isabsent;
+}
