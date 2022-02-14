@@ -6,84 +6,82 @@
 
     <link rel="stylesheet" href="assets/index.css">
 
-    <link class="link_css_theme" rel="stylesheet" href="assets/index_light_color.css">
-
     <title>My site</title>
 </head>
 
 <body>
 
 <header>
-    <p onclick="theme_switch();" class='switcher' id="theme_switcher_btn">dark</p>
+    <p class='switcher unselectable' id="theme_switcher_btn">dark</p>
     <nav>
-        <a href="/">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Achievements</a>
-        <a href="/cv.html">CV</a>
-        <a href="/blog.html">Blog</a>
+        <a href="/" class="active_nav nav_home">Home</a>
+        <a href="#about" class="nav_about">About</a>
+        <a href="#projects" class="nav_projects">Projects</a>
+        <a href="#achievements" class="nav_achievements">Achievements</a>
+        <a href="/cv.html" class="nav_cv">CV</a>
+        <a href="/blog.html" class="nav_blog">Blog</a>
     </nav>
-    <p class='switcher' id="lang_switcher_btn">ru</p>
+    <p class='switcher unselectable' id="lang_switcher_btn">eng</p>
 </header>
 
 <main>
 
     <section class="whoami">
         <div class="left">
-            <h2 id="second_name">Kuzmenkov</h2>
-            <h2 id="first_name">Igor</h2>
-            <p id="short_about">Hello everyone, I am developing a backend for websites and electronics</p>
+            <h2 class="whoami_second_name">Kuzmenkov</h2>
+            <h2 class="whoami_first_name">Igor</h2>
+            <p class="whoami_short_about">Hello everyone, I am developing a backend for websites and electronics</p>
             <hr>
             <div class="social">
-
+                <!--TODO: social bloсk-->
             </div>
         </div>
         <img src="assets/img/i.png" alt="igor">
     </section>
 
     <section class="about">
-        <h2>About</h2>
-        <p>
+        <h2 class="about_title">About</h2>
+        <p class="about_school">
             I want to enroll in Yandex Lyceum ++ to learn Django
         </p>
-        <div class="toogle_about">
-
+        <div class="toggle_about">
+            <!--TODO: toggle about bloсk-->
         </div>
     </section>
 
     <section class="projects">
         <hgroup>
-            <h2>My recent projects</h2>
-            <h3>my latest projects coincide with the contestant Grigory Muravenko @deformater, since we did most of
+            <h2 class="projects_title">My recent d</h2>
+            <h3 class="projects_description">my latest projects coincide with the contestant Grigory Muravenko @deformater, since we did most of
                 these projects together</h3>
         </hgroup>
         <div class="content">
             <div class="isabsent">
-                <h4>IsAbsent</h4>
-                <p>the system of monitoring and marking absence for educational institutions</p>
+                <h4 class="projects_isabsent_title">IsAbsent</h4>
+                <p class="projects_isabsent_description">the system of monitoring and marking absence for educational institutions</p>
             </div>
             <div class="randomall">
-                <h4>RandomAll</h4>
-                <p>a simple service for obtaining various random values</p>
+                <h4 class="projects_randomall_title">RandomAll</h4>
+                <p class="projects_randomall_description">a simple service for obtaining various random values</p>
             </div>
             <div class="balentinbot">
-                <h4>ValentinBot</h4>
-                <p>telegram bot for exchanging valentine's cards</p>
+                <h4 class="projects_valentinbot_title">ValentinBot</h4>
+                <p class="projects_valentinbot_description">telegram bot for exchanging valentine's cards</p>
             </div>
             <div class="shrty">
-                <h4>Shrty</h4>
-                <p>service for getting a unique shortened link</p>
+                <h4 class="projects_shrty_title">Shrty</h4>
+                <p class="projects_shrty_description">service for getting a unique shortened link</p>
             </div>
         </div>
     </section>
 
     <section class="achievements">
         <hgroup>
-            <h2>Achievements</h2>
-            <h3>Some of my results of participation in competitions</h3>
+            <h2 class="achievements_title">Achievements</h2>
+            <h3 class="achievements_description">Some of my results of participation in competitions</h3>
         </hgroup>
         <div class="content">
-            <p>
+            <p class="achievements_achievements">
                 1st place - 2020 - at the WorldSkills Russia Moscow championship electronics competencies 12-14
 
                 2nd place - 2019 - at the WorldSkills Russia Moscow championship electronics competencies 12-14
@@ -101,7 +99,7 @@
     </section>
 
     <section class="photos">
-        <h2>Some photos</h2>
+        <h2 class="photos_title">Some photos</h2>
         <div class="content">
             <img src="" alt="">
             <img src="" alt="">
@@ -112,15 +110,17 @@
 </main>
 
 <footer>
-    <h2>Contact with me</h2>
-    <h3>You can find me on any of these social networks <a>or write to me on my email</a></h3>
+    <h2 class="contact_title">Contact with me</h2>
+    <h3 class="contact_short_description">You can find me on any of these social networks <a>or write to me on my email</a></h3>
     <div class="social">
 
     </div>
-    <h3>Thank you to Yandex that I finally started making a website for myself</h3>
+    <h3 class="contact_thanks">Thank you to Yandex that I finally started making a website for myself</h3>
 </footer>
 
 </body>
 
-<script src="assets/js/index.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/lang.js"></script>
+
 </html>

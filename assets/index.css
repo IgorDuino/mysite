@@ -19,6 +19,18 @@ html{
 body{
     width: 1200px;
 }
+body.dark-theme{
+    background-color: #333333;
+}
+
+.switcher{
+    color: black;
+}
+
+body.dark-theme .switcher{
+    color: white;
+}
+
 
 header{
     width: 100%;
@@ -30,6 +42,15 @@ header{
 
 header nav a{
     font-weight: 500;
+    color: #6B7280;
+}
+
+body.dark-theme header nav a{
+    color: #F2F2F2;
+}
+
+.active_nav{
+    text-decoration: underline;
 }
 
 header nav a:hover{
@@ -53,4 +74,13 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently */
 }
