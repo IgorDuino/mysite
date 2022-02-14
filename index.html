@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="assets/index.css">
 
-    <link rel="stylesheet" href="assets/index_light_color.css">
+    <link class="link_css_theme" rel="stylesheet" href="assets/index_light_color.css">
 
     <title>My site</title>
 </head>
@@ -14,20 +14,31 @@
 <body>
 
 <header>
-    <button class="theme_switcher">dark</button>
+    <button onclick="theme_switch();" class="theme_switcher_btn">dark</button>
     <nav>
-        <a href="1.html">Home</a> | <a href="2.html">About</a> |
-        <a href="3.html">Projects</a> | <a href="4.html">Achievements</a>|
-        <a href="3.html">CV</a> | <a href="4.html">Blog</a>
+        <a href="1.html">Home</a>
+        <a href="2.html">About</a>
+        <a href="3.html">Projects</a>
+        <a href="4.html">Achievements</a>
+        <a href="3.html">CV</a>
+        <a href="4.html">Blog</a>
     </nav>
-    <button class="lang_switcher">ru</button>
+    <button class="lang_switcher_btn">ru</button>
 </header>
 
 <main>
 
     <section class="whoami">
+        <div class="left">
+            <h2 id="second_name">Kuzmenkov</h2>
+            <h2 id="first_name">Igor</h2>
+            <p id="short_about">Hello everyone, I am developing a backend for websites and electronics</p>
+            <hr>
+            <div class="social">
 
-
+            </div>
+        </div>
+        <img src="assets/img/i.png" alt="igor">
     </section>
 
     <section class="about">
@@ -110,4 +121,6 @@
 </footer>
 
 </body>
+
+<script src="assets/js/index.js"></script>
 </html>
