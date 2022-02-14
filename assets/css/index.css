@@ -110,6 +110,7 @@ body.dark-theme .about_div {
     color: #000;
     background: #fff;
     mix-blend-mode: lighten;
+    width: 1020px;
     font-size: 90px;
     font-weight: 900;
 }
@@ -143,28 +144,16 @@ body.dark-theme .about p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.toggle_about_item.school {
+body.dark-theme .toggle_about_item:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.toggle_about_item {
     background-color: #CFC8BE;
 }
 
-.toggle_about_item.school.active {
-    background-color: #30430C;
-}
-
-.toggle_about_item.learn {
-    background-color: #68B7E0;
-}
-
-.toggle_about_item.learn.active {
-    background-color: #2C509C;
-}
-
-.toggle_about_item.yandex {
+.toggle_about_item.active {
     background-color: #131313;
-}
-
-.toggle_about_item.yandex.active {
-    background-color: #FA9715;
 }
 
 /* Projects */
@@ -211,17 +200,24 @@ body.dark-theme .about p {
 .project {
     border-radius: 10px;
 
+    background-color: #333333;
+
     width: 100%;
     height: 100%;
 }
 
-.project h4{
+.project:hover .blurry-text{
+    color: #F2F2F2;
+    text-shadow: 0 0 0;
+}
+
+.project h4 {
     font-weight: bold;
     font-size: 50px;
     color: #FFFFFF;
 }
 
-.project p{
+.project p {
     color: #F2F2F2;
     font-weight: normal;
     font-size: 20px;
@@ -230,7 +226,7 @@ body.dark-theme .about p {
 .valentin {
     grid-area: valentin;
 
-    /*background: linear-gradient(117.48deg, #EB5757 -12.38%, #E33232 50.62%, #CA1D1D 111.06%);*/
+    background: linear-gradient(117.48deg, #EB5757 -12.38%, #E33232 50.62%, #CA1D1D 111.06%);
 }
 
 .shrty {
@@ -249,13 +245,10 @@ body.dark-theme .about p {
 
 .projects .blurry-text {
     color: transparent;
-    text-shadow: 0 0 5px rgba(255,255,255,0.4);
+    transition: .2s;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
 }
 
-.projects .blurry-text:hover {
-    color: #F2F2F2;
-    /*text-shadow: 0 0 5px rgba(255,255,255,0.4);*/
-}
 
 /* Achievements */
 
@@ -292,7 +285,7 @@ body.dark-theme .about p {
     font-style: normal;
 }
 
-.achievements_list li{
+.achievements_list li {
     margin-top: 15px;
 }
 
@@ -313,3 +306,16 @@ body.dark-theme .about p {
     margin-bottom: 0;
 }
 
+.photos_container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.photos img {
+    border-radius: 10px;
+}
