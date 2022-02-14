@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Inter', serif;
-    /*transition: .2s;*/
 }
 
 a {
@@ -10,6 +9,7 @@ a {
 }
 
 html {
+    scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,11 +106,16 @@ header nav {
     flex-direction: row;
 }
 
+
+
 /* Footer */
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
@@ -133,3 +138,4 @@ footer h3{
     margin-top: 38px;
     font-weight: normal;
 }
+

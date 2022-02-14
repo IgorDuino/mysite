@@ -32,11 +32,17 @@ function load_lang(code) {
     const request = new XMLHttpRequest();
     request.open('GET', requestURLEng);
     request.send();
-    let r;
+
     request.onload = function () {
         const res = JSON.parse(request.responseText)
         change_lang(res)
     }
 }
 
+if (localStorage.getItem("lang") === "rus") {
+    lang_btn.innerHTML = 'rus'
+} else {
+    localStorage.setItem("lang", "eng")
+    lang_btn.innerHTML = 'eng'
+}
 load_lang(lang_btn.innerHTML)

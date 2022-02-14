@@ -74,6 +74,10 @@ body.dark-theme .whoami hr {
     margin-bottom: 0;
 }
 
+body.dark-theme .about h2 {
+    color: #f2f2f2;
+}
+
 .about_div {
     background-size: cover;
 
@@ -81,17 +85,22 @@ body.dark-theme .whoami hr {
 }
 
 .about_div.school {
-    background: url('/assets/img/school.png');
+    /*display: none;*/
+    background: url('/assets/img/school.png') fixed center;
 }
 
 .about_div.learn {
-    display: none;
-    background: url('/assets/img/electronic.png');
+    /*display: none;*/
+    background: url('/assets/img/electronic.png') fixed center;
 }
 
 .about_div.yandex {
-    display: none;
-    background: url('/assets/img/lyceum.png');
+    /*display: none;*/
+    background: url('/assets/img/lyceum.png') fixed center;
+}
+
+body.dark-theme .about_div {
+    background: transparent;
 }
 
 .about p {
@@ -103,6 +112,12 @@ body.dark-theme .whoami hr {
     mix-blend-mode: lighten;
     font-size: 90px;
     font-weight: 900;
+}
+
+body.dark-theme .about p {
+    color: #f2f2f2;
+    background: transparent;
+    mix-blend-mode: normal;
 }
 
 .toggle_about {
@@ -160,12 +175,6 @@ body.dark-theme .whoami hr {
     text-align: center;
 }
 
-.projects h3 {
-    color: #6B7280;
-    font-size: 18px;
-    font-weight: normal;
-}
-
 .projects hgroup h2 {
     color: #333333;
     font-size: 48px;
@@ -174,7 +183,18 @@ body.dark-theme .whoami hr {
     margin-bottom: 0;
 }
 
-.projects.content {
+.projects hgroup h3 {
+    color: #6B7280;
+    width: 760px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.projects_container {
+    width: 1000px;
+
+    margin-top: 60px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -184,20 +204,112 @@ body.dark-theme .whoami hr {
     "isabsent isabsent"
     "randomall valentin"
     "shrty valentin";
+
+    text-align: left;
 }
 
-.projects.content.valentin {
+.project {
+    border-radius: 10px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.project h4{
+    font-weight: bold;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.project p{
+    color: #F2F2F2;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.valentin {
     grid-area: valentin;
+
+    /*background: linear-gradient(117.48deg, #EB5757 -12.38%, #E33232 50.62%, #CA1D1D 111.06%);*/
 }
 
-.projects.content.shrty {
+.shrty {
     grid-area: shrty;
+
 }
 
-.projects.content.randomall {
+.randomall {
     grid-area: randomall;
+
 }
 
-.projects.content.isabsent {
+.isabsent {
     grid-area: isabsent;
 }
+
+.projects .blurry-text {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(255,255,255,0.4);
+}
+
+.projects .blurry-text:hover {
+    color: #F2F2F2;
+    /*text-shadow: 0 0 5px rgba(255,255,255,0.4);*/
+}
+
+/* Achievements */
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.achievements hgroup h2 {
+    color: #333333;
+    font-size: 48px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.achievements hgroup h3 {
+    color: #6B7280;
+    width: 760px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.achievements_list {
+    list-style: none;
+    color: black;
+    width: 1122px;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: justify;
+    font-style: normal;
+}
+
+.achievements_list li{
+    margin-top: 15px;
+}
+
+/* Some photos */
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.photos hgroup h2 {
+    color: #333333;
+    font-size: 48px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
