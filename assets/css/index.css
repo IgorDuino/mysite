@@ -286,7 +286,7 @@ body.dark-theme .toggle_about_item:hover {
 }
 
 .achievements_list li {
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
 /* Some photos */
@@ -316,6 +316,28 @@ body.dark-theme .toggle_about_item:hover {
     text-align: center;
 }
 
-.photos img {
+.photo {
     border-radius: 10px;
+    width: 385px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo.robocup{
+    background-image: url('/assets/img/RoboCup.png');
+}
+
+.photo.worldskills{
+    background-image: url('/assets/img/WorldSkills.png');
+}
+.photo.pom{
+    background-image: url('/assets/img/practice_on_mockups.png');
+}
+
+.photo p{
+    margin-top: auto;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
 }
