@@ -106,6 +106,56 @@ header nav {
     flex-direction: row;
 }
 
+.social_item {
+    height: 35px;
+    width: 35px;
+}
+
+.social_item a {
+    height: 100%;
+    width: 100%;
+}
+
+.social_item.mail {
+    background: url("/assets/img/mail_dark.svg") no-repeat center;
+}
+
+body.dark-theme .social_item.mail {
+    background: url("/assets/img/mail_light.svg") no-repeat center;
+}
+
+.social_item.github {
+    background: url("/assets/img/github_dark.svg") no-repeat center;
+}
+
+body.dark-theme .social_item.github {
+    background: url("/assets/img/github_light.svg") no-repeat center;
+}
+
+.social_item.telegram {
+    background: url("/assets/img/telegram_dark.svg") no-repeat center;
+}
+
+
+body.dark-theme .social_item.telegram {
+    background: url("/assets/img/telegram_light.svg") no-repeat center;
+}
+
+.social_item.vk {
+    background: url("/assets/img/vk_dark.svg") no-repeat center;
+}
+
+body.dark-theme .social_item.vk {
+    background: url("/assets/img/vk_light.svg") no-repeat center;
+}
+
+.social_item.instagram {
+    background: url("/assets/img/instagram_dark.svg") no-repeat center;
+}
+
+body.dark-theme .social_item.instagram {
+    background: url("/assets/img/instagram_light.svg") no-repeat center;
+}
 
 
 /* Footer */
@@ -119,19 +169,19 @@ footer {
     margin-bottom: 50px;
 }
 
-footer.mail_link{
+footer.mail_link {
     text-decoration: underline;
     font-size: 18px;
 }
 
-footer h2{
+footer h2 {
     color: #333333;
     font-size: 48px;
     margin-bottom: 0;
     margin-top: 0;
 }
 
-footer h3{
+footer h3 {
     font-size: 18px;
     color: #6B7280;
     margin-bottom: 0;
