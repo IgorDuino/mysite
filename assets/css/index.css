@@ -2,7 +2,6 @@
 
 section {
     margin-top: 150px;
-    /*border: 1px solid black;*/
     display: flex;
     flex-direction: column;
 }
@@ -55,9 +54,12 @@ body.dark-theme .whoami hr {
 }
 
 .whoami .iam {
-    border-radius: 10px;
+    border-radius: 2%;
 }
 
+.iam.mobile {
+    display: none;
+}
 
 /* About */
 
@@ -87,15 +89,15 @@ body.dark-theme .about h2 {
 }
 
 .about_div.school {
-    background: url('/assets/img/school.png') fixed center;
+    background: url('../../assets/img/school.png') fixed center;
 }
 
 .about_div.learn {
-    background: url('/assets/img/electronic.png') fixed center;
+    background: url('../../assets/img/electronic.png') fixed center;
 }
 
 .about_div.yandex {
-    background: url('/assets/img/lyceum.png') fixed center;
+    background: url('../../assets/img/lyceum.png') fixed center;
 }
 
 body.dark-theme .about_div {
@@ -246,21 +248,22 @@ body.dark-theme .projects hgroup h3 {
 .shrty {
     grid-area: shrty;
 
-    background: url("/assets/img/shrty_bg.png");
+    background: url("../../assets/img/shrty_bg.png");
 }
 
 .randomall {
 
     grid-area: randomall;
 
-    background: url("/assets/img/randomall_bg.png");
+    background: url("../../assets/img/randomall_bg.png");
 }
+
 .isabsent {
     height: 270px;
 
     grid-area: isabsent;
 
-    background: url("/assets/img/isabsent_bg.png");
+    background: url("../../assets/img/isabsent_bg.png");
 }
 
 .projects .blurry-text {
@@ -346,6 +349,7 @@ body.dark-theme .achievements_list li {
 body.dark-theme .photos hgroup h2 {
     color: white;
 }
+
 .photos_container {
     margin-top: 50px;
     width: 100%;
@@ -365,15 +369,15 @@ body.dark-theme .photos hgroup h2 {
 }
 
 .photo.robocup {
-    background: url('/assets/img/RoboCup.png') no-repeat black center;
+    background: url('../../assets/img/RoboCup.png') no-repeat black center;
 }
 
 .photo.worldskills {
-    background: url('/assets/img/WorldSkills.png') no-repeat black center;
+    background: url('../../assets/img/WorldSkills.png') no-repeat black center;
 }
 
 .photo.pom {
-    background: url('/assets/img/practice_on_mockups.png') no-repeat black center;
+    background: url('../../assets/img/practice_on_mockups.png') no-repeat black center;
 }
 
 .photo p {
@@ -382,3 +386,4 @@ body.dark-theme .photos hgroup h2 {
     color: white;
     font-weight: 600;
 }
+

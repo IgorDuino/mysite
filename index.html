@@ -18,40 +18,42 @@
             переключение тем и языка недоступно из-за невозможности выполнения JavaScript кода
         </div>
     </noscript>
+
+
     <p class='switcher unselectable' id="theme_switcher_btn">dark</p>
     <nav>
         <a href="/" class="active_nav nav_home">Home</a>
         <a href="#about" class="nav_about">About</a>
         <a href="#projects" class="nav_projects">Projects</a>
         <a href="#achievements" class="nav_achievements">Achievements</a>
-        <a href="/cv.pdf" class="nav_cv">CV</a>
-        <a href="/blog.html" class="nav_blog">Blog</a>
+        <a href="./cv.pdf" class="nav_cv">CV</a>
+        <a href="/blog.html" class="nav_blog disabled">Blog</a>
     </nav>
     <p class='switcher unselectable' id="lang_switcher_btn">eng</p>
 </header>
 
 <main>
-
     <section class="whoami">
         <div class="left">
             <h2 class="whoami_full_name">Kuzmenkov<br>Igor</h2>
+            <img class="iam mobile" src="assets/img/i.png" alt="igor">
             <p class="whoami_short_about">Hello everyone, I am developing a backend for websites and electronics</p>
             <hr>
             <div class="social">
                 <a href="mailto:igor.kuzmenkov.05@mail.ru">
-                <div class="social_item mail"></div>
+                    <div class="social_item mail"></div>
                 </a>
                 <a href="https://github.com/IgorDuino">
-                <div class="social_item github"></div>
+                    <div class="social_item github"></div>
                 </a>
                 <a href="https://t.me/igorduino">
-                <div class="social_item telegram"></div>
+                    <div class="social_item telegram"></div>
                 </a>
                 <a href="https://vk.com/igorduino">
-                <div class="social_item vk"></div>
+                    <div class="social_item vk"></div>
                 </a>
                 <a href="https://www.instagram.com/igorduino/">
-                <div class="social_item instagram"></div>
+                    <div class="social_item instagram"></div>
                 </a>
             </div>
         </div>
@@ -62,14 +64,17 @@
         <h2 class="about_title">About</h2>
         <div class="about_div school">
             <p class="about_school">
+                Now I am studying at Lyceum No. 1580 in the 10th grade
             </p>
         </div>
         <div class="about_div learn">
             <p class="about_learn">
+                I am engaged in programming and electronics
             </p>
         </div>
         <div class="about_div yandex">
             <p class="about_yandex">
+                I want to enroll in Yandex Lyceum ++ to learn Django
             </p>
         </div>
         <div class="toggle_about">
@@ -81,29 +86,29 @@
 
     <section id="projects" class="projects">
         <hgroup>
-            <h2 class="projects_title"></h2>
+            <h2 class="projects_title">My recent projects</h2>
             <h3 class="projects_description">my latest projects coincide with the contestant Grigory Muravenko
                 @deformater, since we did most of
                 these projects together</h3>
         </hgroup>
         <div class="projects_container">
-                <div class="isabsent project">
-                    <h4 class="projects_isabsent_title">IsAbsent</h4>
-                    <p class="projects_isabsent_description blurry-text">the system of monitoring and marking absence for
-                        educational institutions</p>
-                </div>
+            <div class="isabsent project">
+                <h4 class="projects_isabsent_title">IsAbsent</h4>
+                <p class="projects_isabsent_description blurry-text">the system of monitoring and marking absence for
+                    educational institutions</p>
+            </div>
 
-                <div class="randomall project">
-                    <h4 class="projects_randomall_title">RandomAll</h4>
-                    <p class="projects_randomall_description blurry-text">a simple service for obtaining various random
-                        values</p>
-                </div>
+            <div class="randomall project">
+                <h4 class="projects_randomall_title">RandomAll</h4>
+                <p class="projects_randomall_description blurry-text">a simple service for obtaining various random
+                    values</p>
+            </div>
 
-                <div class="valentin project">
-                    <h4 class="projects_valentinbot_title">ValentinBot</h4>
-                    <p class="projects_valentinbot_description blurry-text">telegram bot for exchanging valentine's
-                        cards</p>
-                </div>
+            <div class="valentin project">
+                <h4 class="projects_valentinbot_title">ValentinBot</h4>
+                <p class="projects_valentinbot_description blurry-text">telegram bot for exchanging valentine's
+                    cards</p>
+            </div>
 
             <div class="shrty project">
                 <h4 class="projects_shrty_title">Shrty</h4>
@@ -118,18 +123,30 @@
             <h3 class="achievements_description">Some of my results of participation in competitions</h3>
         </hgroup>
         <ul class="achievements_list">
-            <li class="achievement_1"></li>
-            <li class="achievement_2"></li>
-            <li class="achievement_3"></li>
-            <li class="achievement_4"></li>
-            <li class="achievement_5"></li>
-            <li class="achievement_6"></li>
+            <li class="achievement_1">1st place - 2020 - at the WorldSkills Russia Moscow championship electronics
+                competencies 12-14
+            </li>
+            <li class="achievement_2">2nd place - 2019 - at the WorldSkills Russia Moscow championship electronics
+                competencies 12-14
+            </li>
+            <li class="achievement_3">3nd place - 2021 - at the WorldSkills Russia Moscow championship electronics
+                competencies 14-16
+            </li>
+            <li class="achievement_4">4th place - 2021 at the RoboCup Robotics Championship in Tomsk in the competence
+                of robofootball Open Soccer
+            </li>
+            <li class="achievement_5">Master category - 2019 in the radio electronics competition "practice on mockups"
+                in Moscow
+            </li>
+            <li class="achievement_6">2nd place - 2019 at the exhibition of technical projects Archimede with the
+                project "Robot dog Gosha"
+            </li>
         </ul>
     </section>
 
     <section class="photos">
         <hgroup>
-            <h2 class="photos_title"></h2>
+            <h2 class="photos_title">Some photos</h2>
         </hgroup>
         <div class="photos_container">
             <div class="photo robocup">
@@ -147,7 +164,7 @@
 </main>
 
 <footer>
-    <h2 class="contact_title"></h2>
+    <h2 class="contact_title">Contact with me</h2>
     <h3 class="contact_short_description">You can find me on any of these social networks</h3>
     <a href="mailto:igor.kuzmenkov.05@mail.ru" class="mail_link"></a>
     <div class="social">

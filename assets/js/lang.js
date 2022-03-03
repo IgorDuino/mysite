@@ -9,7 +9,6 @@ function switch_lang() {
         lang_btn.innerHTML = 'rus'
     }
     load_lang(lang_btn.innerHTML)
-
 }
 
 lang_btn.addEventListener('click', switch_lang)
@@ -18,7 +17,6 @@ function change_lang(lang) {
     console.log(lang)
     for (let key in lang) {
         try {
-            console.log(lang[key])
             document.querySelector('.' + key).innerHTML = lang[key]
         } catch (e) {
             console.error(e)
@@ -27,7 +25,7 @@ function change_lang(lang) {
 }
 
 function load_lang(code) {
-    const requestURLEng = `/languages/${code}.json`;
+    const requestURLEng = `././languages/${code}.json`;
 
     const request = new XMLHttpRequest();
     request.open('GET', requestURLEng);
