@@ -25,7 +25,7 @@ function change_lang(lang) {
 }
 
 function load_lang(code) {
-    const requestURLEng = `././languages/${code}.json`;
+    const requestURLEng = `static/languages/${code}.json`;
 
     const request = new XMLHttpRequest();
     request.open('GET', requestURLEng);

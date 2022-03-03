@@ -124,44 +124,44 @@ header nav {
 }
 
 .social_item.mail {
-    background: url("../../assets/img/mail_dark.svg") no-repeat center;
+    background: url("../img/mail_dark.svg") no-repeat center;
 }
 
 body.dark-theme .social_item.mail {
-    background: url("../../assets/img/mail_light.svg") no-repeat center;
+    background: url("../img/mail_light.svg") no-repeat center;
 }
 
 .social_item.github {
-    background: url("../../assets/img/github_dark.svg") no-repeat center;
+    background: url("../img/github_dark.svg") no-repeat center;
 }
 
 body.dark-theme .social_item.github {
-    background: url("../../assets/img/github_light.svg") no-repeat center;
+    background: url("../img/github_light.svg") no-repeat center;
 }
 
 .social_item.telegram {
-    background: url("../../assets/img/telegram_dark.svg") no-repeat center;
+    background: url("../img/telegram_dark.svg") no-repeat center;
 }
 
 
 body.dark-theme .social_item.telegram {
-    background: url("../../assets/img/telegram_light.svg") no-repeat center;
+    background: url("../img/telegram_light.svg") no-repeat center;
 }
 
 .social_item.vk {
-    background: url("../../assets/img/vk_dark.svg") no-repeat center;
+    background: url("../img/vk_dark.svg") no-repeat center;
 }
 
 body.dark-theme .social_item.vk {
-    background: url("../../assets/img/vk_light.svg") no-repeat center;
+    background: url("../img/vk_light.svg") no-repeat center;
 }
 
 .social_item.instagram {
-    background: url("../../assets/img/instagram_dark.svg") no-repeat center;
+    background: url("../img/instagram_dark.svg") no-repeat center;
 }
 
 body.dark-theme .social_item.instagram {
-    background: url("../../assets/img/instagram_light.svg") no-repeat center;
+    background: url("../img/instagram_light.svg") no-repeat center;
 }
 
 
