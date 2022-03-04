@@ -10,7 +10,6 @@ views = Blueprint('views', __name__)
 
 
 @views.route('/', methods=['GET', 'POST'])
-@login_required
 def home():
     # if request.method == 'POST':
     #     title = request.form.get('title')
@@ -22,14 +21,15 @@ def home():
     return render_template("home.html")
 
 
-@views.route('/delete', methods=['POST'])
-def delete():
-    # todo_object = json.loads(request.data)
-    # todoId = todo_object['todoId']
-    # todo = Todo.query.get(todoId)
-    # if todo:
-    #     if todo.user_id == current_user.id:
-    #         db.session.delete(todo)
-    #         db.session.commit()
-
-    return jsonify({})
+# @views.route('/delete', methods=['POST'])
+# @login_required
+# def delete():
+#     # todo_object = json.loads(request.data)
+#     # todoId = todo_object['todoId']
+#     # todo = Todo.query.get(todoId)
+#     # if todo:
+#     #     if todo.user_id == current_user.id:
+#     #         db.session.delete(todo)
+#     #         db.session.commit()
+#
+#     return jsonify({})
