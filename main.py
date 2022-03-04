@@ -1,16 +1,6 @@
-from flask import Flask, render_template
+from app import create_app
 
-app = Flask(__name__)
+app = create_app()
 
-
-@app.route("/")
-def index_route():
-    return render_template("index.html")
-
-
-@app.route("/blog")
-def blog_route():
-    return render_template("blog.html")
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+if __name__ == '__main__':
+    app.run(debug=True)
