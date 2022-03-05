@@ -10,28 +10,29 @@
 {% block main %}
     <section class="create_article">
         <h1>Создание статьи</h1>
-        <form action="#" method="post" style="background-color: white;">
+        <form id="article_form" action="{{ url_for("blog.blog_create_article") }}" method="post" style="background-color: white;">
             <label for="article_title_input">Заголовок статьи</label><br>
-            <input id="article_title_input" type="text" required>
+            <input id="article_title_input" name="article_title" type="text" required>
             <br>
 
             <label for="article_short_description_input">Краткое описание статьи</label><br>
-            <textarea id="article_short_description_input" name="article_short_description_input"></textarea>
+            <textarea id="article_short_description_input" name="article_short_description"></textarea>
             <br>
 
             <label for="article_tags_input">Теги статьи (1 на строку)</label><br>
-            <textarea id="article_tags_input" name="article_tags_input"></textarea>
+            <textarea id="article_tags_input" name="article_tags"></textarea>
             <br>
 
             <label for="article_content_input">Контент статьи</label><br>
-            <textarea id="article_content_input" name="article_content_input" required></textarea>
+            <textarea id="article_content_input" name="article_content" required></textarea>
             <br>
 
             <label for="article_datetime_input">Дата публикации</label><br>
-            <input type="datetime-local" name="article_datetime_input" id="article_datetime_input">
+            <input type="datetime-local" name="article_datetime" id="article_datetime_input">
             <br>
 
-            <button type="submit">Опубликовать</button>
+            <input type="button" onclick="check_article_form()" value="ПРОДОЛЖИТЬ">
+
         </form>
     </section>
 

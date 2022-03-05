@@ -23,9 +23,7 @@ function change_lang(lang) {
     for (let key in lang) {
         try {
             document.querySelector('.' + key).innerHTML = lang[key]
-        } catch (e) {
-            console.error(e)
-        }
+        } catch (e) {}
     }
 }
 

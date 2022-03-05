@@ -9,6 +9,6 @@ const easyMDE = new EasyMDE({
     initialValue: '## Заголовок \nMarkDown редактор статьи!'
 });
 
-function print_val(){
-    console.log(easyMDE.value())
+function check_article_form(){
+    document.getElementById('article_form').submit();
 }

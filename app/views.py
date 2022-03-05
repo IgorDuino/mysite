@@ -19,17 +19,3 @@ def home():
     #     db.session.commit()
     #     flash('Todo created successfully!', category='success')
     return render_template("home.html")
-
-
-# @views.route('/delete', methods=['POST'])
-# @login_required
-# def delete():
-#     # todo_object = json.loads(request.data)
-#     # todoId = todo_object['todoId']
-#     # todo = Todo.query.get(todoId)
-#     # if todo:
-#     #     if todo.user_id == current_user.id:
-#     #         db.session.delete(todo)
-#     #         db.session.commit()
-#
-#     return jsonify({})

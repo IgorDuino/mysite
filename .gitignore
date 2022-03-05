@@ -2,6 +2,9 @@
 ### Example user template
 mysite.sock
 .env
+wsgi.py
+app/db.db
+
 # IntelliJ project files
 .idea
 *.iml
