@@ -1,0 +1,17 @@
+{
+  "title": "Сайт Кузьменкова Игоря",
+  "nav_home": "Главная",
+  "nav_about": "Обо мне",
+  "nav_projects": "Проекты",
+  "nav_achievements": "Достижения",
+  "nav_cv": "CV",
+  "nav_blog": "Блог",
+  "whoami_full_name": "Кузьменков<br>Игорь",
+  "whoami_second_name": "Кузьменков",
+  "whoami_first_name": "Игорь",
+  "whoami_short_about": "Всем привет, я разрабатываю бэкэнд для IT проектов и электронику.",
+
+  "contact_title": "Свяжитесь со мной",
+  "contact_short_description": "Вы можете найти меня в любой из этих социальных сетей",
+  "mail_link": "или написать мне на мою электронную почту"
+}

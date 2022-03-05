@@ -10,6 +10,7 @@
   "whoami_second_name": "Кузьменков",
   "whoami_first_name": "Игорь",
   "whoami_short_about": "Всем привет, я разрабатываю бэкэнд для IT проектов и электронику.",
+
   "about_title": "Обо мне",
   "about_school": "Сейчас я учусь в лицее № 1580 в 10 классе",
   "about_learn": "Я занимаюсь программированием и электроникой",
@@ -37,8 +38,8 @@
   "photo_robocup_text": "RoboCup, Томск",
   "photo_worldskills_text": "WorldSkills, Москва",
   "photo_pom_text": "practice on mockups, Москва",
+
   "contact_title": "Свяжитесь со мной",
   "contact_short_description": "Вы можете найти меня в любой из этих социальных сетей",
-  "mail_link": "или написать мне на мою электронную почту",
-  "contact_thanks": "Спасибо Яндексу за то, что я наконец-то начал делать сайт для себя :)"
+  "mail_link": "или написать мне на мою электронную почту"
 }

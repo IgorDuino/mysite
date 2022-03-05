@@ -10,6 +10,7 @@
   "whoami_second_name": "Kuzmenkov",
   "whoami_first_name": "Igor",
   "whoami_short_about": "Hello everyone, I am developing a backend for websites and electronics.",
+
   "about_title": "About",
   "about_school": "Now I am studying at Lyceum No. 1580 in the 10th grade",
   "about_learn": "I am engaged in programming and electronics",
@@ -37,8 +38,8 @@
   "photo_robocup_text": "RoboCup, Tomsk",
   "photo_worldskills_text": "WorldSkills, Moscow",
   "photo_pom_text": "practice on mockups, Moscow",
+
   "contact_title": "Contact with me",
   "contact_short_description": "You can find me on any of these social networks",
-  "mail_link": "or write to me on my email",
-  "contact_thanks": "Thank you to Yandex that I finally started making a website for myself"
+  "mail_link": "or write to me on my email"
 }

@@ -9,6 +9,12 @@ a {
     text-decoration: none;
 }
 
+section {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
 a.disabled {
     pointer-events: none;
     cursor: default;
@@ -65,13 +71,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-}
-
-header {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
-
 
 /* Navigation */
 

@@ -1,16 +1,8 @@
-
-section {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-}
-
-
 /* Who Am I */
 
 
 .whoami {
-    display: flex;
+    margin-top: 150px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

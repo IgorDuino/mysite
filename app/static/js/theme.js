@@ -3,7 +3,6 @@ const theme_btn = document.querySelector("#theme_switcher_btn");
 
 let theme_flag = false;
 
-
 function switch_theme() {
     if (theme_flag) {
         localStorage.setItem("theme", "day");
@@ -16,13 +15,12 @@ function switch_theme() {
         theme_btn.innerHTML = 'light'
         body.className = " dark-theme";
     }
-
 }
 
 theme_btn.addEventListener('click', switch_theme)
 
 console.log(localStorage.getItem("theme"))
-if (localStorage.getItem("theme") == "night") {
+if (localStorage.getItem("theme") === "night") {
     theme_btn.innerHTML = 'light'
     theme_flag = true;
     body.className = " dark-theme";

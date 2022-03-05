@@ -2,20 +2,47 @@
 
 {% block title %}IgorDuino Blog | Create Article{% endblock %}
 {% block head %}
-    <link rel="stylesheet" href="{{ url_for("static", filename="css/base.css") }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
     <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+    <script src="https://kit.fontawesome.com/ff01b7faea.js" crossorigin="anonymous"></script>
 {% endblock %}
 
 {% block main %}
+    <section class="create_article">
+        <h1>Создание статьи</h1>
+        <form action="#" method="post" style="background-color: white;">
+            <label for="article_title_input">Заголовок статьи</label><br>
+            <input id="article_title_input" type="text" required>
+            <br>
 
-    <form action="" method="post">
-        <textarea id="my-text-area"></textarea>
-        <script>
+            <label for="article_short_description_input">Краткое описание статьи</label><br>
+            <textarea id="article_short_description_input" name="article_short_description_input"></textarea>
+            <br>
 
+            <label for="article_tags_input">Теги статьи (1 на строку)</label><br>
+            <textarea id="article_tags_input" name="article_tags_input"></textarea>
+            <br>
 
-        </script>
-    </form>
+            <label for="article_content_input">Контент статьи</label><br>
+            <textarea id="article_content_input" name="article_content_input" required></textarea>
+            <br>
+
+            <label for="article_datetime_input">Дата публикации</label><br>
+            <input type="datetime-local" name="article_datetime_input" id="article_datetime_input">
+            <br>
+
+            <button type="submit">Опубликовать</button>
+        </form>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/create_article.js') }}"></script>
+
 {% endblock %}
 
-
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/create_article.js') }}"></script>
+    <script>
+        set_language_name('create_article');
+    </script>
+{% endblock %}

@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block main %}
-     <section class="whoami">
+    <section class="whoami">
         <div class="left">
             <h2 class="whoami_full_name">Kuzmenkov<br>Igor</h2>
             <img class="iam mobile" src="../static/img/i.png" alt="igor">
@@ -130,4 +130,12 @@
             </div>
         </div>
     </section>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/about_switcher.js') }}"></script>
+    <script>
+        set_language_name('index');
+    </script>
 {% endblock %}

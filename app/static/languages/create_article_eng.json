@@ -1,0 +1,17 @@
+{
+  "title": "Kuzmenkov Igor Site",
+  "nav_home": "Home",
+  "nav_about": "About",
+  "nav_projects": "Projects",
+  "nav_achievements": "Achievements",
+  "nav_cv": "CV",
+  "nav_blog": "Blog",
+  "whoami_full_name": "Kuzmenkov<br>Igor",
+  "whoami_second_name": "Kuzmenkov",
+  "whoami_first_name": "Igor",
+  "whoami_short_about": "Hello everyone, I am developing a backend for websites and electronics.",
+
+  "contact_title": "Contact with me",
+  "contact_short_description": "You can find me on any of these social networks",
+  "mail_link": "or write to me on my email"
+}

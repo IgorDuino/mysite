@@ -1,4 +1,9 @@
 const lang_btn = document.querySelector("#lang_switcher_btn");
+var language_name = ''
+
+function set_language_name(language_name_) {
+    language_name = language_name_;
+}
 
 function switch_lang() {
     if (localStorage.getItem("lang") === "rus") {
@@ -25,7 +30,7 @@ function change_lang(lang) {
 }
 
 function load_lang(code) {
-    const requestURLEng = `static/languages/${code}.json`;
+    const requestURLEng = `/static/languages/${language_name}_${code}.json`;
 
     const request = new XMLHttpRequest();
     request.open('GET', requestURLEng);
