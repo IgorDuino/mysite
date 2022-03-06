@@ -3,6 +3,7 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block head %}
+    {{ super() }}
     <link rel="stylesheet" href="{{ url_for("static", filename="css/article.css") }}">
 {% endblock %}
 
@@ -10,8 +11,8 @@
 
     <h1 class="article_title">{{ article.title }}</h1>
 
-    <section class="article_content">
-        {{ article.content_html }}
-    </section>
+    <div class="article_content">
+        {{ article.content_html | safe }}
+    </div>
 
 {% endblock %}

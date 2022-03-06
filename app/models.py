@@ -38,7 +38,7 @@ class User(db.Model, UserMixin):
     articles = db.relationship('Article')
 
     def __repr__(self):
-        return f"<User> {self.id} {self.first_name} {self.last_name} {self.articles}"
+        return f"<User {self.id}> - {self.last_name} {self.first_name} {self.email}"
 
 
 class Article(db.Model):
@@ -46,7 +46,7 @@ class Article(db.Model):
     title = db.Column(db.String(500), nullable=False)
     short_description = db.Column(db.Text)
     hidden = db.Column(db.Boolean, default=False)
-    url = db.Column(db.String(500))
+    url = db.Column(db.String(500), default=str(id), unique=True)
     content_markdown = db.Column(db.Text)
     content_html = db.Column(db.Text)
     views = db.Column(db.Integer, default=0)
@@ -55,4 +55,4 @@ class Article(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
     def __repr__(self):
-        return f"<Article> {self.id} {self.title}"
+        return f"<Article {self.id}> - {self.title}"

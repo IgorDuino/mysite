@@ -2,12 +2,21 @@
 
 {% block title %}IgorDuino Blog{% endblock %}
 {% block head %}
-    <link rel="stylesheet" href="{{ url_for("static", filename="css/base.css") }}">
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/blog.css") }}">
 {% endblock %}
 
 {% block main %}
-    {% for article in articles %}
-        <h2 class="article_title">{{ article.title }}</h2>
-        <p class="article_short_description">{{ article.sh }}</p>
-    {% endfor %}
+    <div class="articles">
+        {% for article in articles %}
+            <div class="article">
+                <a href="{{ url_for("blog.blog_article", article_url=article.url) }}">
+                    <h2 class="article_title">{{ article.title }}</h2>
+                    <p class="article_short_description">{{ article.short_description }}</p>
+                </a>
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+
 {% endblock %}

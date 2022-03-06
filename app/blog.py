@@ -1,5 +1,5 @@
 import markdown
-from flask import Blueprint, render_template, request, redirect, url_for
+from flask import Blueprint, render_template, request, redirect, url_for, flash
 from flask_login import login_required, current_user
 
 from . import db
@@ -22,21 +22,19 @@ def blog_create_article():
 
     if request.method == 'POST':
         article_title = request.form.get('article_title')
-        article_markdown_content = request.form.get('article_content')
+        article_short_description = request.form.get('article_short_description')
         article_url = request.form.get('article_url')
+        article_markdown_content = request.form.get('article_content')
+        article_content_html = markdown.markdown(article_markdown_content)
         user_id = current_user.id
 
-        article = Article()
-        article.user_id = user_id
-        article.title = article_title
-        article.hidden = False
-        article.url = article_url
-        article.content_markdown = article_markdown_content
-        article.content_html = markdown.markdown(article_markdown_content)
+        article = Article(user_id=user_id, title=article_title, short_description=article_short_description,
+                          url=article_url, content_markdown=article_markdown_content, content_html=article_content_html)
 
         db.session.add(article)
         db.session.commit()
 
+        flash('Article published successfully.', category='success')
         return redirect(url_for("blog.blog_home"))
 
     return render_template("create_article.html")

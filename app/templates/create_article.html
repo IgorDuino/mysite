@@ -2,9 +2,9 @@
 
 {% block title %}IgorDuino Blog | Create Article{% endblock %}
 {% block head %}
+    {{ super() }}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
     <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
-    <script src="https://kit.fontawesome.com/ff01b7faea.js" crossorigin="anonymous"></script>
 {% endblock %}
 
 {% block main %}
@@ -31,9 +31,9 @@
             <textarea id="article_content_input" name="article_content" required></textarea>
             <br>
 
-            <label for="article_datetime_input">Дата публикации</label><br>
-            <input type="datetime-local" name="article_datetime" id="article_datetime_input">
-            <br>
+{#            <label for="article_datetime_input">Дата публикации</label><br>#}
+{#            <input type="datetime-local" name="article_datetime" id="article_datetime_input">#}
+{#            <br>#}
 
             <input type="button" onclick="check_article_form()" value="ПРОДОЛЖИТЬ">
 
