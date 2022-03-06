@@ -7,10 +7,6 @@ from .models import Article
 blog = Blueprint('blog', __name__)
 
 
-def abcd():
-    print(123)
-
-
 @blog.route('/', methods=['GET', 'POST'])
 def blog_home():
     articles = db.session.query(Article).all()
@@ -21,8 +17,11 @@ def blog_home():
 @login_required
 def blog_create_article():
     if request.method == 'POST':
-        request.form.get()
+        article_title = request.form.get('article_title')
+        article_url = request.form.get('article_url')
+
         return redirect(url_for("blog.blog_home"))
+
     return render_template("create_article.html")
 
 
