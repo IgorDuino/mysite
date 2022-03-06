@@ -1,5 +1,6 @@
+import markdown
 from flask import Blueprint, render_template, request, redirect, url_for
-from flask_login import login_required
+from flask_login import login_required, current_user
 
 from . import db
 from .models import Article
@@ -16,9 +17,25 @@ def blog_home():
 @blog.route('/create', methods=['GET', 'POST'])
 @login_required
 def blog_create_article():
+    if not current_user.is_admin:
+        return render_template("error.html", error=403), 403
+
     if request.method == 'POST':
         article_title = request.form.get('article_title')
+        article_markdown_content = request.form.get('article_content')
         article_url = request.form.get('article_url')
+        user_id = current_user.id
+
+        article = Article()
+        article.user_id = user_id
+        article.title = article_title
+        article.hidden = False
+        article.url = article_url
+        article.content_markdown = article_markdown_content
+        article.content_html = markdown.markdown(article_markdown_content)
+
+        db.session.add(article)
+        db.session.commit()
 
         return redirect(url_for("blog.blog_home"))
 
@@ -33,4 +50,9 @@ def blog_article(article_url):
         article: Article
         return render_template("article.html", article=article)
     else:
-        return render_template("404.html"), 404
+        return render_template("error.html", error=404), 404
+
+
+@blog.app_errorhandler(Exception)
+def blog_error_handler(error):
+    return render_template("error.html", error=error)

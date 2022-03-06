@@ -37,10 +37,14 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(200), nullable=False)
     articles = db.relationship('Article')
 
+    def __repr__(self):
+        return f"<User> {self.id} {self.first_name} {self.last_name} {self.articles}"
+
 
 class Article(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(500), nullable=False)
+    short_description = db.Column(db.Text)
     hidden = db.Column(db.Boolean, default=False)
     url = db.Column(db.String(500))
     content_markdown = db.Column(db.Text)
@@ -49,3 +53,6 @@ class Article(db.Model):
     rating = db.Column(db.Integer, default=10)
     datetime = db.Column(db.DateTime(timezone=True), default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+
+    def __repr__(self):
+        return f"<Article> {self.id} {self.title}"
