@@ -5,6 +5,7 @@ from flask_login import login_required, current_user
 from . import db
 from .models import Article
 
+
 blog = Blueprint('blog', __name__)
 
 
