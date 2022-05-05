@@ -3,7 +3,7 @@ decouple### Example user template template
 mysite.sock
 .env
 wsgi.py
-app/db.db
+*.db
 
 # IntelliJ project files
 .idea
