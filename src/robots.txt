@@ -1,0 +1,46 @@
+User-agent: Yandex
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.ppt
+Disallow: /*.txt
+Allow: /*/assets/css/*.css
+Allow: /*/assets/js/*.js
+Allow: /*/assets/img/*.jpg
+Allow: /*/assets/img/*.jpeg
+Allow: /*/assets/img/*.png
+Allow: /*/assets/img/*.gif
+Clean-param: utm_source&utm_medium&utm_term&utm_content&utm_campaign&yclid&gclid&_openstat&from /
+Host: igorduino.ru
+
+User-agent: Googlebot
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.ppt
+Disallow: /*.txt
+Allow: /*/assets/css/*.css
+Allow: /*/assets/js/*.js
+Allow: /*/assets/img/*.jpg
+Allow: /*/assets/img/*.jpeg
+Allow: /*/assets/img/*.png
+Allow: /*/assets/img/*.gif
+
+User-agent: *
+Disallow: /*utm
+Disallow: /*clid=
+Disallow: /*openstat
+Disallow: /*from
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.pp
+Disallow: /*.txt
+Allow: /*/assets/css/*.css
+Allow: /*/assets/js/*.js
+Allow: /*/assets/img/*.jpg
+Allow: /*/assets/img/*.jpeg
+Allow: /*/assets/img/*.png
+Allow: /*/assets/img/*.gif
+
+Sitemap: http://igorduino.ru/sitemap.xml
